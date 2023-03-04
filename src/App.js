@@ -11,10 +11,10 @@ function App() {
       <Navbar />
       <Routes>
 
-        <Route path="/" element= { <ItemListContainer /> } />
+        <Route path="/" element= {<ItemListContainer />} />
         <Route path="/login" element= { <Login /> } />
 
-        <Route path="*" element= { <h1> error 404: Not found </h1> } />
+        <Route path="*" element= {<h1> error 404: Not found </h1>} />
 
       </Routes>
     </BrowserRouter>    
