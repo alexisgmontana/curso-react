@@ -10,7 +10,7 @@ const Navbar = ({children}) => {
           <a href="#" className="brand-logo">
             LOGO
           </a>
-          <ul id="nav-mobile" class="hide-on-med-and-down">
+          <ul id="nav-mobile" className="hide-on-med-and-down">
             <li><a href="#">Tipo Snapback</a></li>
             <li><a href="#">Tipo Trucker</a></li>
             <li><a href="#">Donde entontrarnos</a></li>

@@ -4,6 +4,9 @@ const CartWidget = () => {
   return (
     <div className='right'>
         <a href="#"> <RiShoppingCartLine /> </a>
+    <div>
+        <span>0</span>
+    </div>
     </div>
   )
 }
