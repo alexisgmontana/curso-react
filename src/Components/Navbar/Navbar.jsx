@@ -8,13 +8,14 @@ const Navbar = ({children}) => {
       <nav>
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">
-            <CartWidget/>
+            LOGO
           </a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="hide-on-med-and-down">
             <li><a href="#">Tipo Snapback</a></li>
             <li><a href="#">Tipo Trucker</a></li>
             <li><a href="#">Donde entontrarnos</a></li>
           </ul>
+            <CartWidget />
         </div>
       </nav>
       {children}
