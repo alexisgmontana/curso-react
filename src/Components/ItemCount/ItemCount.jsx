@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { useState } from "react";
 
 const ItemCount = ({ stock, initial=1, onAdd }) => {
@@ -20,11 +21,11 @@ const ItemCount = ({ stock, initial=1, onAdd }) => {
 
       <h2>{contador}</h2>
 
-      <button onClick={sumar}>Sumar</button>
+      <Button variant="contained" onClick={sumar}> Sumar </Button>
 
-      <button onClick={restar}>Restar</button>
+      <Button variant="contained" onClick={restar}> Restar </Button>
 
-      <button onClick={ ()=> onAdd(contador) }>Agregar al carrito</button>
+      <Button variant="contained" color="success" onClick={ ()=> onAdd(contador) }> Agregar al carrito </Button>
     </div>
   );
 };
