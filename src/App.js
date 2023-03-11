@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Cart from "./Components/Cart/Cart";
+import Form from "./Components/Form/Form";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
           <Route path="/" element= {<ItemListContainer />} />
           <Route path="/cart" element= { <Cart /> } />
+          <Route path="/form" element= { <Form /> } />
 
           <Route path="*" element= {<h1> error 404: Not found </h1>} />
 

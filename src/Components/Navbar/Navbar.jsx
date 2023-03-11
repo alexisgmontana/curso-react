@@ -1,15 +1,16 @@
 
 import CartWidget from "../CartWidget/CartWidget"
 import "materialize-css/dist/css/materialize.min.css"
+import { Link } from "react-router-dom"
 
 const Navbar = ({children}) => {
   return (
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo center">
+          <Link to="/" href="#" className="brand-logo center">
             LOGO
-          </a>
+          </Link>
           <ul id="nav-mobile" className="hide-on-med-and-down">
             <li><a href="#">Tipo Snapback</a></li>
             <li><a href="#">Tipo Trucker</a></li>
