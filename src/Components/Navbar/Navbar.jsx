@@ -1,13 +1,13 @@
 
 import CartWidget from "../CartWidget/CartWidget"
-import 'materialize-css/dist/css/materialize.min.css'
+import "materialize-css/dist/css/materialize.min.css"
 
 const Navbar = ({children}) => {
   return (
     <div>
       <nav>
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">
+          <a href="#" className="brand-logo center">
             LOGO
           </a>
           <ul id="nav-mobile" className="hide-on-med-and-down">

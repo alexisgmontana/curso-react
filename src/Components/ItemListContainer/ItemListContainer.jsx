@@ -1,3 +1,4 @@
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemListContainer = ({ greeting }) => {
     return (
