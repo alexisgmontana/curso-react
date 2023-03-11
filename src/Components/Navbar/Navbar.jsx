@@ -12,9 +12,9 @@ const Navbar = ({children}) => {
             LOGO
           </Link>
           <ul id="nav-mobile" className="hide-on-med-and-down">
-            <li><a href="#">Tipo Snapback</a></li>
-            <li><a href="#">Tipo Trucker</a></li>
-            <li><a href="#">Donde entontrarnos</a></li>
+            <li><Link to="/category/snapback"><a href="#">Tipo Snapback</a></Link></ li>
+            <li><Link to="/category/trucker"><a href="#">Tipo Trucker</a></Link></ li>
+            <li><Link to="/"><a href="#">Donde entontrarnos</a></Link></ li>
           </ul>
             <CartWidget />
         </div>
