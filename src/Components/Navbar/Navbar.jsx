@@ -1,9 +1,8 @@
+import CartWidget from "../CartWidget/CartWidget";
+import "materialize-css/dist/css/materialize.min.css";
+import { Link } from "react-router-dom";
 
-import CartWidget from "../CartWidget/CartWidget"
-import "materialize-css/dist/css/materialize.min.css"
-import { Link } from "react-router-dom"
-
-const Navbar = ({children}) => {
+const Navbar = ({ children }) => {
   return (
     <div>
       <nav>
@@ -12,16 +11,28 @@ const Navbar = ({children}) => {
             LOGO
           </Link>
           <ul id="nav-mobile" className="hide-on-med-and-down">
-            <li><Link to="/category/snapback"><a href="#">Tipo Snapback</a></Link></ li>
-            <li><Link to="/category/trucker"><a href="#">Tipo Trucker</a></Link></ li>
-            <li><Link to="/"><a href="#">Donde entontrarnos</a></Link></ li>
+            <li>
+              <Link to="/category/snapback">
+                <a href="#">Tipo Snapback</a>
+              </Link>
+            </li>
+            <li>
+              <Link to="/category/trucker">
+                <a href="#">Tipo Trucker</a>
+              </Link>
+            </li>
+            <li>
+              <Link to="/">
+                <a href="#">Donde entontrarnos</a>
+              </Link>
+            </li>
           </ul>
-            <CartWidget />
+          <CartWidget />
         </div>
       </nav>
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
